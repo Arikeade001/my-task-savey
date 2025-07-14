@@ -1,8 +1,12 @@
 import "./App.css";
+// import { useEffect, useState } from 'react';
+
 
 function App() {
+  
   return (
-    <div>
+    <div className="App">
+      
       <nav className="bg-white shadow-md px-6 py-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
