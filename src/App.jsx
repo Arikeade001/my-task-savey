@@ -1,74 +1,11 @@
 import "./App.css";
-// import { useEffect, useState } from 'react';
-
+import Navbar from "./components/Navbar";
 
 function App() {
   
   return (
     <div className="App">
-      
-      <nav className="bg-white shadow-md px-6 py-4">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <img src="/logo.png" alt="savey logo" className="h-7 w-auto" />
-          </div>
-
-          <div className="hidden md:flex space-x-8 text-gray-600 font-medium">
-            <a href="#" className="hover:text-blue-600">
-              Features
-            </a>
-            <a href="#" className="hover:text-blue-600">
-              Career
-            </a>
-            <a href="#" className="hover:text-blue-600">
-            About Us
-            </a>
-            <a href="#" className="hover:text-blue-600">
-              Contact
-            </a>
-          </div>
-
-          <div className="md:hidden">
-            <button
-              id="menu-toggle"
-              className="text-gray-800 focus:outline-none"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div
-          id="mobile-menu"
-          className="md:hidden hidden px-6 pt-4 pb-2 space-y-2"
-        >
-          <a href="#" className="block text-gray-600 hover:text-blue-600">
-            Features
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-blue-600">
-            Career
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-blue-600">
-            About Us
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-blue-600">
-            Contact
-          </a>
-        </div>
-      </nav>
-
+      <Navbar />
       <main className="flex flex-col items-center text-center mt-10 flex-1">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Stay accountable while attaining
